@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@400;500;600;700&display=swap");
+@import "tailwindcss";
+
+@theme {
+  --color-elan-background: #0d0d0c;
+  --color-elan-secondary: #171715;
+  --color-elan-cream: #f4efe6;
+  --color-elan-muted: #a8a39a;
+  --color-elan-gold: #c9a66b;
+  --color-elan-border: #2a2925;
+
+  --font-display: "Playfair Display", serif;
+  --font-body: "Inter", sans-serif;
+}
+
+:root {
+  font-family: var(--font-body);
+  color: var(--color-elan-cream);
+  background-color: var(--color-elan-background);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: clip;
+  background-color: var(--color-elan-background);
+}
+
+body {
+  margin: 0;
+  width: 100%;
+  overflow-x: clip;
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: var(--color-elan-background);
+  color: var(--color-elan-cream);
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+::selection {
+  background-color: var(--color-elan-gold);
+  color: var(--color-elan-background);
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-elan-background);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-elan-border);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-elan-gold);
+}
